@@ -58,6 +58,11 @@ class ParkingSystem{
 
     public static class BikeParking extends Parking{
 
+        public BikeParking()
+        {
+            createSlot();
+        }
+
         public static int getFees()
         {
             return 20;
@@ -78,6 +83,11 @@ class ParkingSystem{
     }
 
     public static class BusParking extends Parking{
+        
+        public BusParking()
+        {
+            createSlot();
+        }
 
          public static int getFees()
         {
