@@ -9,15 +9,15 @@ class ParkingSystem{
     
     static int vId; //this is static
 
-    public interface VehicleType{
+    // public interface VehicleType{
 
-        public int assignSlot(Vehicle vehicle);   //Taking in Vehicle and assigning slot id
+    //     public int assignSlot(Vehicle vehicle);   //Taking in Vehicle and assigning slot id
 
-        public void releaseSlot(int slotId,int fee);  //Release the slot
+    //     public void releaseSlot(int slotId,int fee);  //Release the slot
 
-    }
+    // }
 
-    public static class Parking implements VehicleType{
+    public static class Parking{
 
         Slot[] arr;
 
