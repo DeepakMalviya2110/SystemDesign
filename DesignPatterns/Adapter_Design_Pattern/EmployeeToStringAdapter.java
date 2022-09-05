@@ -1,10 +1,10 @@
 import java.util.*;
 
-class EmployeeToStringAdaptor implements IPhoneDirectory{
+class EmployeeToStringAdapter implements IPhoneDirectory{
 
     List<Employee> Employees;
 
-    public EmployeeToStringAdaptor(List<Employee> list)
+    public EmployeeToStringAdapter(List<Employee> list)
     {
         this.Employees=list;
     }

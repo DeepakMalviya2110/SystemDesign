@@ -1,11 +1,11 @@
 import java.util.*;
 
-class AdaptorDesignPattern{
+class AdapterDesignPattern{
 
     public static void main(String []args)
     {
         ArrayList<Employee> Employees=Employee.details();
-        EmployeeToStringAdaptor etsa=new EmployeeToStringAdaptor(Employees);
+        EmployeeToStringAdapter etsa=new EmployeeToStringAdapter(Employees);
         System.out.println(etsa.getAllPhoneNumbers());
     }
 
