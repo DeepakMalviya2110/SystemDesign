@@ -2,18 +2,18 @@ import java.util.*;
 
 class EmployeeToStringAdapter implements IPhoneDirectory{
 
-    List<Employee> Employees;
+    Employee emp;
 
-    public EmployeeToStringAdapter(List<Employee> list)
+    public EmployeeToStringAdapter(Employee emp)
     {
-        this.Employees=list;
+        this.emp=emp;
     }
 
     public List<String> getAllPhoneNumbers()
     {
         List<String> al=new ArrayList<>();
 
-        for(Employee emp:this.Employees)
+        for(Employee emp:emp.details())
         {
             al.add(emp.mobile);
         }

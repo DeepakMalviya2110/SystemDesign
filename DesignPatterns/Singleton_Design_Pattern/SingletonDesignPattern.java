@@ -7,7 +7,7 @@ class SingletonDesignPattern{
         SingleObjectClass obj=SingleObjectClass.getSingleObjectInstance();
 
         obj.info();
-
+        
     }
 
 }

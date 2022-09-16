@@ -3,17 +3,22 @@ import java.util.*;
 class Employee{
 
     String name;
-    int empid;
+    int id;
     String mobile;
 
-    public Employee(String name,int empid,String mobile)
+    public Employee()
+    {
+
+    }
+
+    public Employee(String name,int id,String mobile)
     {
         this.name=name;
-        this.empid=empid;
+        this.id=id;
         this.mobile=mobile;
     }
 
-    public static ArrayList<Employee> details()
+    public ArrayList<Employee> details()
     {
         ArrayList<Employee> al=new ArrayList<>();
 

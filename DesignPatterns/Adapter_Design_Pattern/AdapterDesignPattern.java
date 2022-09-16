@@ -4,9 +4,11 @@ class AdapterDesignPattern{
 
     public static void main(String []args)
     {
-        ArrayList<Employee> Employees=Employee.details();
-        EmployeeToStringAdapter etsa=new EmployeeToStringAdapter(Employees);
-        System.out.println(etsa.getAllPhoneNumbers());
+        Employee employee=new Employee();
+        EmployeeToStringAdapter etsa=new EmployeeToStringAdapter(employee);
+        MyPhoneDirectory mpd=new MyPhoneDirectory(etsa);
+
+        System.out.println(mpd.getAllPhoneNumbers());
     }
 
 }
